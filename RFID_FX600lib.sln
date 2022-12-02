@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFID_FX600lib", "RFID_FX600lib\RFID_FX600lib.csproj", "{556072D3-862E-4C27-81A1-5B45998DF7B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST_FORM", "TEST_FORM\TEST_FORM.csproj", "{F30A6BBA-E2F9-479C-9927-2AF506C35B37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{556072D3-862E-4C27-81A1-5B45998DF7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556072D3-862E-4C27-81A1-5B45998DF7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556072D3-862E-4C27-81A1-5B45998DF7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556072D3-862E-4C27-81A1-5B45998DF7B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30A6BBA-E2F9-479C-9927-2AF506C35B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30A6BBA-E2F9-479C-9927-2AF506C35B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30A6BBA-E2F9-479C-9927-2AF506C35B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30A6BBA-E2F9-479C-9927-2AF506C35B37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0B3BA83-A0C3-4DBD-9ED4-E8B8796CFC1B}
+	EndGlobalSection
+EndGlobal

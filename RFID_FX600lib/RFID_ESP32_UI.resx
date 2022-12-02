@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serialPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sqL_DataGridView_RFID_List.Columns" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAAG57eo6JmfPAAAAAEF
+        +v///xRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAA
+        AAkHBwMAAAAKAAAAAAAAAACkAAEABfn///8vU3lzdGVtLldpbmRvd3MuRm9ybXMuRGF0YUdyaWRWaWV3
+        Q29sdW1uU29ydE1vZGUBAAAAB3ZhbHVlX18ACAQAAAAAAAAABfj///8xU3lzdGVtLldpbmRvd3MuRm9y
+        bXMuRGF0YUdyaWRWaWV3Q29udGVudEFsaWdubWVudAEAAAAHdmFsdWVfXwAIBAAAACAAAAAF9////xVT
+        UUxVSS5UYWJsZStJbmRleFR5cGUBAAAAB3ZhbHVlX18ACAIAAAAAAAAABfb///8VU1FMVUkuVGFibGUr
+        VmFsdWVUeXBlAQAAAAd2YWx1ZV9fAAgCAAAAZAAAAAX1////FFNRTFVJLlRhYmxlK0RhdGVUeXBlAQAA
+        AAd2YWx1ZV9fAAgCAAAAZAAAAAX0////FlNRTFVJLlRhYmxlK1N0cmluZ1R5cGUBAAAAB3ZhbHVlX18A
+        CAIAAAABAAAABfP///8VU1FMVUkuVGFibGUrT3RoZXJUeXBlAQAAAAd2YWx1ZV9fAAgCAAAAZAAAAAs=
+</value>
+  </data>
+  <data name="sqL_DataGridView_RFID_List.Columns1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAACSVCWAAAAAQX6////
+        FFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAACQcH
+        AwAAAAoAAAAAAAAAAKQAAQAF+f///y9TeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRhR3JpZFZpZXdDb2x1
+        bW5Tb3J0TW9kZQEAAAAHdmFsdWVfXwAIBAAAAAAAAAAF+P///zFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5E
+        YXRhR3JpZFZpZXdDb250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgEAAAAEAAAAAX3////FVNRTFVJ
+        LlRhYmxlK0luZGV4VHlwZQEAAAAHdmFsdWVfXwAIAgAAAAAAAAAF9v///xVTUUxVSS5UYWJsZStWYWx1
+        ZVR5cGUBAAAAB3ZhbHVlX18ACAIAAABkAAAABfX///8UU1FMVUkuVGFibGUrRGF0ZVR5cGUBAAAAB3Zh
+        bHVlX18ACAIAAABkAAAABfT///8WU1FMVUkuVGFibGUrU3RyaW5nVHlwZQEAAAAHdmFsdWVfXwAIAgAA
+        AAEAAAAF8////xVTUUxVSS5UYWJsZStPdGhlclR5cGUBAAAAB3ZhbHVlX18ACAIAAABkAAAACw==
+</value>
+  </data>
+  <data name="sqL_DataGridView_RFID_List.Columns2" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAAHU3RhdGlvblAAAAAB
+        Bfr///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEA
+        AAAJBwcDAAAACgAAAAAAAAAApAABAAX5////L1N5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmll
+        d0NvbHVtblNvcnRNb2RlAQAAAAd2YWx1ZV9fAAgEAAAAAAAAAAX4////MVN5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbnRlbnRBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAQAAAAgAAAABff///8V
+        U1FMVUkuVGFibGUrSW5kZXhUeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAX2////FVNRTFVJLlRhYmxl
+        K1ZhbHVlVHlwZQEAAAAHdmFsdWVfXwAIAgAAAGQAAAAF9f///xRTUUxVSS5UYWJsZStEYXRlVHlwZQEA
+        AAAHdmFsdWVfXwAIAgAAAGQAAAAF9P///xZTUUxVSS5UYWJsZStTdHJpbmdUeXBlAQAAAAd2YWx1ZV9f
+        AAgCAAAAAQAAAAXz////FVNRTFVJLlRhYmxlK090aGVyVHlwZQEAAAAHdmFsdWVfXwAIAgAAAGQAAAAL
+</value>
+  </data>
+  <data name="sqL_DataGridView_RFID_List.Columns3" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAACSUTIAAAAAQX6////
+        FFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAACQcH
+        AwAAAAoAAAAAAAAAAKQAAQAF+f///y9TeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRhR3JpZFZpZXdDb2x1
+        bW5Tb3J0TW9kZQEAAAAHdmFsdWVfXwAIBAAAAAAAAAAF+P///zFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5E
+        YXRhR3JpZFZpZXdDb250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgEAAAAEAAAAAX3////FVNRTFVJ
+        LlRhYmxlK0luZGV4VHlwZQEAAAAHdmFsdWVfXwAIAgAAAAAAAAAF9v///xVTUUxVSS5UYWJsZStWYWx1
+        ZVR5cGUBAAAAB3ZhbHVlX18ACAIAAABkAAAABfX///8UU1FMVUkuVGFibGUrRGF0ZVR5cGUBAAAAB3Zh
+        bHVlX18ACAIAAABkAAAABfT///8WU1FMVUkuVGFibGUrU3RyaW5nVHlwZQEAAAAHdmFsdWVfXwAIAgAA
+        AAEAAAAF8////xVTUUxVSS5UYWJsZStPdGhlclR5cGUBAAAAB3ZhbHVlX18ACAIAAABkAAAACw==
+</value>
+  </data>
+  <data name="sqL_DataGridView_RFID_List.Columns4" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAAJU3RhcnRUaW1lZAAA
+        AAAF+v///xRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRl
+        AQAAAAkHBwMAAAAKAAAAAAAAAACkAAEABfn///8vU3lzdGVtLldpbmRvd3MuRm9ybXMuRGF0YUdyaWRW
+        aWV3Q29sdW1uU29ydE1vZGUBAAAAB3ZhbHVlX18ACAQAAAAAAAAABfj///8xU3lzdGVtLldpbmRvd3Mu
+        Rm9ybXMuRGF0YUdyaWRWaWV3Q29udGVudEFsaWdubWVudAEAAAAHdmFsdWVfXwAIBAAAACAAAAAF9///
+        /xVTUUxVSS5UYWJsZStJbmRleFR5cGUBAAAAB3ZhbHVlX18ACAIAAAAAAAAABfb///8VU1FMVUkuVGFi
+        bGUrVmFsdWVUeXBlAQAAAAd2YWx1ZV9fAAgCAAAAZAAAAAX1////FFNRTFVJLlRhYmxlK0RhdGVUeXBl
+        AQAAAAd2YWx1ZV9fAAgCAAAAZAAAAAX0////FlNRTFVJLlRhYmxlK1N0cmluZ1R5cGUBAAAAB3ZhbHVl
+        X18ACAIAAAABAAAABfP///8VU1FMVUkuVGFibGUrT3RoZXJUeXBlAQAAAAd2YWx1ZV9fAAgCAAAAZAAA
+        AAs=
+</value>
+  </data>
+  <data name="sqL_DataGridView_RFID_List.Columns5" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAAEVGltZZYAAAABBfr/
+        //8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJ
+        BwcDAAAACgAAAAAAAAAApAABAAX5////L1N5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0Nv
+        bHVtblNvcnRNb2RlAQAAAAd2YWx1ZV9fAAgEAAAAAAAAAAX4////MVN5c3RlbS5XaW5kb3dzLkZvcm1z
+        LkRhdGFHcmlkVmlld0NvbnRlbnRBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAQAAABAAAAABff///8VU1FM
+        VUkuVGFibGUrSW5kZXhUeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAX2////FVNRTFVJLlRhYmxlK1Zh
+        bHVlVHlwZQEAAAAHdmFsdWVfXwAIAgAAAGQAAAAF9f///xRTUUxVSS5UYWJsZStEYXRlVHlwZQEAAAAH
+        dmFsdWVfXwAIAgAAAGQAAAAF9P///xZTUUxVSS5UYWJsZStTdHJpbmdUeXBlAQAAAAd2YWx1ZV9fAAgC
+        AAAAAQAAAAXz////FVNRTFVJLlRhYmxlK090aGVyVHlwZQEAAAAHdmFsdWVfXwAIAgAAAGQAAAAL
+</value>
+  </data>
+  <data name="sqL_DataGridView_RFID_List.Columns6" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAADxTUUxVSSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRy
+        YWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EMBAAAAFdTeXN0
+        ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+        eVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACRTUUxVSS5TUUxfRGF0YUdyaWRWaWV3K0NvbHVtbkVs
+        ZW1lbnQLAAAABV9OYW1lBl9XaWR0aAhfVmlzYWJsZRBfQmFja2dyb3VuZENvbG9yCV9Tb3J0TW9kZQpf
+        QWxpZ25tZW50Cl9JbmRleFR5cGUKX1ZhbHVlVHlwZQlfRGF0ZVR5cGULX1N0cmluZ1R5cGUKX090aGVy
+        VHlwZQEAAAQEBAQEBAQECAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAL1N5c3RlbS5XaW5kb3dzLkZv
+        cm1zLkRhdGFHcmlkVmlld0NvbHVtblNvcnRNb2RlBAAAADFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRh
+        R3JpZFZpZXdDb250ZW50QWxpZ25tZW50BAAAABVTUUxVSS5UYWJsZStJbmRleFR5cGUCAAAAFVNRTFVJ
+        LlRhYmxlK1ZhbHVlVHlwZQIAAAAUU1FMVUkuVGFibGUrRGF0ZVR5cGUCAAAAFlNRTFVJLlRhYmxlK1N0
+        cmluZ1R5cGUCAAAAFVNRTFVJLlRhYmxlK090aGVyVHlwZQIAAAACAAAABgUAAAAFU3RhdGVkAAAAAAX6
+        ////FFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAA
+        CQcHAwAAAAoAAAAAAAAAAKQAAQAF+f///y9TeXN0ZW0uV2luZG93cy5Gb3Jtcy5EYXRhR3JpZFZpZXdD
+        b2x1bW5Tb3J0TW9kZQEAAAAHdmFsdWVfXwAIBAAAAAAAAAAF+P///zFTeXN0ZW0uV2luZG93cy5Gb3Jt
+        cy5EYXRhR3JpZFZpZXdDb250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgEAAAAIAAAAAX3////FVNR
+        TFVJLlRhYmxlK0luZGV4VHlwZQEAAAAHdmFsdWVfXwAIAgAAAAAAAAAF9v///xVTUUxVSS5UYWJsZStW
+        YWx1ZVR5cGUBAAAAB3ZhbHVlX18ACAIAAABkAAAABfX///8UU1FMVUkuVGFibGUrRGF0ZVR5cGUBAAAA
+        B3ZhbHVlX18ACAIAAABkAAAABfT///8WU1FMVUkuVGFibGUrU3RyaW5nVHlwZQEAAAAHdmFsdWVfXwAI
+        AgAAAAEAAAAF8////xVTUUxVSS5UYWJsZStPdGhlclR5cGUBAAAAB3ZhbHVlX18ACAIAAABkAAAACw==
+</value>
+  </data>
+</root>
