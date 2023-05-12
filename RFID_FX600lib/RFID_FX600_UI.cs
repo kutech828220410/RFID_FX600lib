@@ -125,7 +125,8 @@ namespace RFID_FX600lib
             this.從站數量 = NumOfRFID;
             this.NumOfRFID = this.從站數量;
             this.FindForm().FormClosing += this.FormClosing;
-          
+            this.ChangeBaudrate(baudrate);
+            this.SerialPortOpen();
             this.MyThread_RS485 = new MyThread(this.FindForm());
             this.MyThread_RS485.AutoRun(true);
             this.MyThread_RS485.SetSleepTime(this.掃描速度);
@@ -138,8 +139,7 @@ namespace RFID_FX600lib
             this.MyThread_RefreshUI.Add_Method(this.RefreshUI);
             this.MyThread_RefreshUI.Trigger();
 
-            this.ChangeBaudrate(baudrate);
-            this.SerialPortOpen();
+          
         }
         public void ChangeBaudrate(Baudrate baudrate)
         {
@@ -408,7 +408,7 @@ namespace RFID_FX600lib
                         this.FLAG_UART_RX = false;
                         serialPort.Write(list_byte.ToArray(), 0, list_byte.Count);
                         MyTimer_UART_TimeOut.TickStop();
-                        MyTimer_UART_TimeOut.StartTickTime(100);
+                        MyTimer_UART_TimeOut.StartTickTime(200);
                         cnt++;
                     }
                     else if (cnt == 1)
@@ -417,7 +417,7 @@ namespace RFID_FX600lib
                         {
                             cnt = 0;
                             retry++;
-
+                            Console.WriteLine($"Command_Set_Beep station :{station} failed!");
                         }
                         if (this.FLAG_UART_RX)
                         {
@@ -434,6 +434,7 @@ namespace RFID_FX600lib
                                 if (this.UART_RX_BUF[7] == list_byte[7]) cnt_OK++;
                                 if (cnt_OK == 8)
                                 {
+                                    Console.WriteLine($"Command_Set_Beep station :{station} sucessed!");
                                     flag_OK = true;
                                     break;
                                 }
@@ -777,7 +778,7 @@ namespace RFID_FX600lib
                     this.List_RFID_Device.Add(rFID_Device);
                 }
             }
-
+            System.Threading.Thread.Sleep(500);
             this.Invoke(new Action(delegate
             {
                 this.listBox_Station.Items.Clear();
