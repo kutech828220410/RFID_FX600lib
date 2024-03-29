@@ -11,3 +11,16 @@ C:\Users\BR001-002D\Source\Repos\RFID_FX600lib\RFID_FX600lib\bin\Release\System.
 C:\Users\BR001-002D\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.csproj.CopyComplete
 C:\Users\BR001-002D\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.dll
 C:\Users\BR001-002D\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.pdb
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\bin\Release\RFID_FX600lib.dll
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\bin\Release\RFID_FX600lib.pdb
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\bin\Release\System.Memory.dll
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\bin\Release\System.Buffers.dll
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.RFID_ESP32_UI.resources
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.RFID_FX600_UI.resources
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.dll
+C:\Users\Administrator\Source\Repos\RFID_FX600lib\RFID_FX600lib\obj\Release\RFID_FX600lib.pdb

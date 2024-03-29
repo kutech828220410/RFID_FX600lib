@@ -1,0 +1,17 @@
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.RFID_ESP32_UI.resources
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.RFID_FX600_UI.resources
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\RFID_FX600lib.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\RFID_FX600lib.pdb
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\Basic.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\MyUI.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\SQLUI.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\System.Memory.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.csproj.CopyComplete
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFID_FX600lib\obj\Debug\RFID_FX600lib.pdb

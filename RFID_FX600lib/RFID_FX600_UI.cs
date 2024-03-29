@@ -776,6 +776,11 @@ namespace RFID_FX600lib
                     rFID_Device.station = i;
                     rFID_Device.UID = "00000000";
                     this.List_RFID_Device.Add(rFID_Device);
+                    Console.WriteLine($"[RFID_FX600] check station {i} sucess ");
+                }
+                else
+                {
+                    Console.WriteLine($"[RFID_FX600] check station {i} failed ");
                 }
             }
             System.Threading.Thread.Sleep(500);
