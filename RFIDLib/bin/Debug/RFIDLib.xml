@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RFIDLib</name>
+    </assembly>
+    <members>
+        <member name="M:RFIDLib.FX600.init(System.String,System.Int32)">
+             <summary>
+             初始化序列埠監聽 (Initialize SerialPort)
+             </summary>
+             <remarks>
+             此方法用於初始化序列埠設定，並註冊 <c>DataReceived</c> 事件處理程序，
+             以便在有資料進入時能觸發回呼函式 <c>SerialPort_DataReceived</c>。  
+            
+             <b>邏輯流程：</b>
+             1. 檢查是否已經初始化 (<c>flag_init</c>)。  
+             2. 若尚未初始化，將 <c>SerialPort_DataReceived</c> 綁定至 <c>serialPort.DataReceived</c> 事件。  
+             3. 儲存傳入的 COM 埠名稱至內部變數 <c>_COM</c>。  
+             4. 將 <c>flag_init</c> 設為 <c>true</c>，避免重複註冊事件。  
+            
+             <b>注意事項：</b>  
+             - 此方法僅註冊事件並記錄 COM 埠，並未真正開啟序列埠連線。  
+             - 若要啟用通訊，需後續呼叫 <c>SerialPortOpen()</c> 開啟序列埠。  
+             - 多次呼叫僅會在第一次註冊事件，其餘僅更新 <c>_COM</c> 值。  
+             
+             </remarks>
+             <param name="COM">指定的序列埠名稱 (例如: "COM3")。</param>
+             <param name="baudrate">鮑率設定，預設為 9600 (此方法目前僅接收參數，未直接套用至 SerialPort)。</param>
+        </member>
+        <member name="M:RFIDLib.FX600.Command_Get_7CardID(System.Int32,System.String@)">
+             <summary>
+             讀取 7 Byte 卡片 ID (Get 7-Byte Card ID Command)
+             </summary>
+             <remarks>
+             此方法會透過序列埠向指定 <c>station</c> 發送「讀取卡號」命令，
+             嘗試獲取裝置回傳的 7 Byte 卡片 ID。  
+            
+             <b>邏輯流程：</b>
+             1. 檢查序列埠是否開啟，若未開啟則立即回傳 <c>false</c>。  
+             2. 組合 MODBUS RTU 封包：功能碼 <c>0x03</c>，起始位址 <c>0x0000</c>，長度 <c>0x0004</c>。  
+             3. 計算 CRC16 並附加於封包尾端。  
+             4. 發送封包，等待回應。  
+             5. 驗證回應長度 (13 bytes) 並檢查：  
+                - 位址是否一致。  
+                - 功能碼是否為 0x03。  
+                - 資料長度是否為 0x08。  
+                - CRC16 校驗是否正確。  
+             6. 若驗證成功，解析出 7 Byte 的卡號，轉換為 16 進制字串 (無 "-" 分隔)，存入 <c>ID</c>。  
+             7. 若超時或驗證失敗則重試，最多 5 次。  
+            
+             <b>Console.WriteLine 訊息：</b>  
+             - [INFO]：發送指令與重試次數。  
+             - [SUCCESS]：卡號讀取成功，並顯示卡號。  
+             - [WARN]：回應 CRC 檢查失敗。  
+             - [TIMEOUT]：等待回應超時。  
+             - [FAIL]：達到最大重試次數仍失敗。  
+             - [ERROR]：序列埠異常或例外錯誤。  
+            
+             <b>參數：</b>
+             <param name="station">目標站號 (Station ID)，通常為裝置地址。</param>
+             <param name="ID">
+             參考傳入的字串變數，用於接收卡號 (成功時為 7 Byte 卡號的十六進制字串，失敗時為 "0")。
+             </param>
+            
+             <b>回傳：</b>
+             <returns>
+             - 成功讀取並驗證卡號時，回傳 <c>true</c> 並更新 <c>ID</c>。  
+             - 若序列埠未開啟、超時、CRC 驗證失敗或例外狀況，則回傳 <c>false</c>。  
+             </returns>
+             </remarks>
+        </member>
+        <member name="M:RFIDLib.FX600.Command_Set_Beep(System.Int32)">
+             <summary>
+             發送蜂鳴器控制命令 (Set Beep Command)
+             </summary>
+             <remarks>
+             此方法會透過序列埠向指定 <c>station</c> 發送蜂鳴器控制命令，
+             驗證裝置是否正確回覆，以確認命令執行狀態。
+            
+             <b>邏輯流程：</b>
+             1. 檢查序列埠是否開啟，若未開啟則回傳 <c>false</c>。  
+             2. 組合 MODBUS RTU 指令封包 (功能碼 0x06，寄存器 0x0004，數值 0x0002)。  
+             3. 計算 CRC16 並附加於封包後方。  
+             4. 傳送封包至目標站號，等待回應。  
+             5. 驗證回應長度 (8 bytes) 並逐位比對與送出封包是否一致。  
+             6. 若回應完全正確，回傳 <c>true</c>；若超時或比對失敗，重試最多 5 次。  
+            
+             <b>Console.WriteLine 訊息：</b>  
+             - [INFO]：發送指令與重試次數。  
+             - [SUCCESS]：回應正確，命令成功。  
+             - [WARN]：有回應，但資料不一致。  
+             - [TIMEOUT]：等待超時。  
+             - [FAIL]：達到最大重試次數仍失敗。  
+             - [ERROR]：序列埠異常或例外錯誤。  
+            
+             <b>參數：</b>
+             <param name="station">目標站號 (Station ID)，通常為裝置地址。</param>
+            
+             <b>回傳：</b>
+             <returns>
+             若命令成功執行並收到正確回覆，回傳 <c>true</c>；  
+             若序列埠未開啟、超時、資料不符或發生錯誤，則回傳 <c>false</c>。
+             </returns>
+             </remarks>
+        </member>
+        <member name="M:RFIDLib.FX600.FindIdAndNameByUID(System.String,System.String)">
+            <summary>
+            在 JSON 字串中找出指定 UID 對應的 ID 與 Name (純字串解析，不使用 JSON 函式庫)
+            </summary>
+            <param name="json">完整 JSON 字串</param>
+            <param name="targetUID">要查找的 UID</param>
+            <returns>若找到回傳 (ID, Name)，否則回傳 (null, null)</returns>
+        </member>
+        <member name="M:RFIDLib.FX600.ExtractValue(System.String,System.String)">
+            <summary>
+            從物件片段裡解析某個 key 的字串值
+            </summary>
+        </member>
+        <member name="M:RFIDLib.FX600.WEBApiPostJsonAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            非同步呼叫 Web API (POST JSON)
+            </summary>
+        </member>
+        <member name="M:RFIDLib.FX600.WEBApiPostJson(System.String,System.String,System.Boolean)">
+            <summary>
+            同步呼叫 Web API (POST JSON)
+            </summary>
+        </member>
+    </members>
+</doc>

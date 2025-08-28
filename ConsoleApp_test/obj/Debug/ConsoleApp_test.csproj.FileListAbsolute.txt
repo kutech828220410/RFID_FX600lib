@@ -1,0 +1,9 @@
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\bin\Debug\ConsoleApp_test.exe.config
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\bin\Debug\ConsoleApp_test.exe
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\bin\Debug\ConsoleApp_test.pdb
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\obj\Debug\ConsoleApp_test.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\obj\Debug\ConsoleApp_test.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\obj\Debug\ConsoleApp_test.exe
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\obj\Debug\ConsoleApp_test.pdb
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\bin\Debug\RFIDLib.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\ConsoleApp_test\obj\Debug\ConsoleApp_test.csproj.CopyComplete

@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\bin\Debug\RFIDLib.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\bin\Debug\RFIDLib.pdb
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\obj\Debug\RFIDLib.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\obj\Debug\RFIDLib.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\obj\Debug\RFIDLib.dll
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\obj\Debug\RFIDLib.pdb
+C:\Users\Administrator\source\repos\RFID_FX600lib\RFIDLib\bin\Debug\RFIDLib.xml
