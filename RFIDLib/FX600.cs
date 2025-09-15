@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.IO.Ports;
 using System.Diagnostics;
-using System.Net.Http;
-using System.Threading.Tasks;
+using System.Net;
 
 namespace RFIDLib
 {
@@ -413,7 +411,7 @@ namespace RFIDLib
             return false;
         }
 
-        static public (string ID, string Name) serch_UID_session(string API_Server, string UID)
+        static public void serch_UID_session(string API_Server, string UID, ref string ID, ref string Name)
         {
             string url = $"{API_Server}/api/person_page/get_all";
             string json_in = "{}";
@@ -425,11 +423,11 @@ namespace RFIDLib
             string json_out = WEBApiPostJson(url, json_in, false);
             Console.WriteLine($"[DEBUG] API 回傳 JSON 長度 = {json_out.Length}");
 
-            (string ID, string Name) result = FindIdAndNameByUID(json_out, UID);
+             FindIdAndNameByUID(json_out, UID , ref ID , ref Name);
 
-            if (!string.IsNullOrEmpty(result.ID) && !string.IsNullOrEmpty(result.Name))
+            if (!string.IsNullOrEmpty(ID) && !string.IsNullOrEmpty(Name))
             {
-                Console.WriteLine($"[SUCCESS] 找到 UID={UID}, ID={result.ID}, Name={result.Name}");
+                Console.WriteLine($"[SUCCESS] 找到 UID={UID}, ID={ID}, Name={Name}");
             }
             else
             {
@@ -437,7 +435,7 @@ namespace RFIDLib
             }
 
             Console.WriteLine("======================================");
-            return result;
+            return;
         }
 
         /// <summary>
@@ -446,16 +444,16 @@ namespace RFIDLib
         /// <param name="json">完整 JSON 字串</param>
         /// <param name="targetUID">要查找的 UID</param>
         /// <returns>若找到回傳 (ID, Name)，否則回傳 (null, null)</returns>
-        private static (string ID, string Name) FindIdAndNameByUID(string json, string targetUID)
+        private static void FindIdAndNameByUID(string json, string targetUID , ref string ID , ref string Name)
         {
             string target_text = $"\"UID\":\"{targetUID}\"";
             int uidIndex = json.IndexOf(target_text, StringComparison.OrdinalIgnoreCase);
-            if (uidIndex < 0) return (null, null);
+            if (uidIndex < 0) ;
 
             // 找出該物件範圍
             int objStart = json.LastIndexOf("{", uidIndex);
             int objEnd = json.IndexOf("}", uidIndex);
-            if (objStart < 0 || objEnd < 0 || objEnd <= objStart) return (null, null);
+            if (objStart < 0 || objEnd < 0 || objEnd <= objStart) ;
 
             string objText = json.Substring(objStart, objEnd - objStart);
 
@@ -463,8 +461,9 @@ namespace RFIDLib
             string id = ExtractValue(objText, "\"ID\":");
             // 擷取 Name
             string name = ExtractValue(objText, "\"name\":");
-
-            return (id, name);
+            ID = id;
+            Name = name;
+            return;
         }
         /// <summary>
         /// 從物件片段裡解析某個 key 的字串值
@@ -569,9 +568,9 @@ namespace RFIDLib
             public const string MULTIPART_FORM_DATA = "multipart/form-data";
         }
         /// <summary>
-        /// 非同步呼叫 Web API (POST JSON)
+        /// 呼叫 Web API (POST JSON) - 適用於 .NET Framework 3.5
         /// </summary>
-        public static async Task<string> WEBApiPostJsonAsync(string url, string value, bool debug)
+        public static string WEBApiPostJson(string url, string value, bool debug)
         {
             string responseBody = "";
             if (string.IsNullOrEmpty(url))
@@ -585,41 +584,39 @@ namespace RFIDLib
                 MyTimerBasic myTimerBasic = new MyTimerBasic();
                 myTimerBasic.StartTickTime(50000);
 
+                // 忽略 SSL 憑證驗證 (適用於自簽憑證)
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-                HttpClient client = new HttpClient();
-                HttpRequestMessage request = new HttpRequestMessage
+
+                byte[] data = Encoding.UTF8.GetBytes(value);
+
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "POST";
+                request.ContentType = "application/json; charset=UTF-8";
+                request.ContentLength = data.Length;
+
+                using (Stream requestStream = request.GetRequestStream())
                 {
-                    RequestUri = new Uri(url),
-                    Method = HttpMethod.Post,
-                    Content = new StringContent(value, Encoding.UTF8, HttpContentType.APPLICATION_JSON)
-                };
+                    requestStream.Write(data, 0, data.Length);
+                }
 
-                var response = await client.SendAsync(request);
-                responseBody = await response.Content.ReadAsStringAsync();
-                return responseBody;
-            }
-            catch
-            {
-                return responseBody;
-            }
-        }
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
+                {
+                    responseBody = reader.ReadToEnd();
+                }
 
-        /// <summary>
-        /// 同步呼叫 Web API (POST JSON)
-        /// </summary>
-        public static string WEBApiPostJson(string url, string value, bool debug)
-        {
-            try
-            {
-                // 直接呼叫非同步版本並阻塞等待
-                return WEBApiPostJsonAsync(url, value, debug).GetAwaiter().GetResult();
+                return responseBody;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[ERROR] WEBApiPostJson failed: {ex.Message}");
-                return "";
+                if (debug)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+                return responseBody;
             }
         }
 
+ 
     }
 }

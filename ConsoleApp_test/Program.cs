@@ -14,7 +14,6 @@ namespace ConsoleApp_test
             RFIDLib.FX600.Command_Set_Beep(1);
             string ID = "";
             RFIDLib.FX600.Command_Get_7CardID(1, ref ID);
-            RFIDLib.FX600.serch_UID_session("https://www.kutech.tw:4443", ID);
             Console.ReadKey();
         }
     }

@@ -103,7 +103,7 @@
              </returns>
              </remarks>
         </member>
-        <member name="M:RFIDLib.FX600.FindIdAndNameByUID(System.String,System.String)">
+        <member name="M:RFIDLib.FX600.FindIdAndNameByUID(System.String,System.String,System.String@,System.String@)">
             <summary>
             在 JSON 字串中找出指定 UID 對應的 ID 與 Name (純字串解析，不使用 JSON 函式庫)
             </summary>
@@ -116,14 +116,9 @@
             從物件片段裡解析某個 key 的字串值
             </summary>
         </member>
-        <member name="M:RFIDLib.FX600.WEBApiPostJsonAsync(System.String,System.String,System.Boolean)">
-            <summary>
-            非同步呼叫 Web API (POST JSON)
-            </summary>
-        </member>
         <member name="M:RFIDLib.FX600.WEBApiPostJson(System.String,System.String,System.Boolean)">
             <summary>
-            同步呼叫 Web API (POST JSON)
+            呼叫 Web API (POST JSON) - 適用於 .NET Framework 3.5
             </summary>
         </member>
     </members>
